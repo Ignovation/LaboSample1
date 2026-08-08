@@ -23,7 +23,19 @@ if(header && hero){
 
 }
 
+document.addEventListener("DOMContentLoaded", () => {
 
+    const heroLines = document.querySelectorAll(".hero-line");
+
+    heroLines.forEach((line, index) => {
+
+        setTimeout(() => {
+            line.classList.add("show");
+        }, index * 300);
+
+    });
+
+});
 
 // =====================
 // Fade Observer
